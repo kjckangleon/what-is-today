@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,30 +9,42 @@
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  </head>
-  <body onload="generateData()">
-    <div class="container">
-      <h1>Scrum template</h1>
-      <div class="jumbotron">
-            <div>
-                <span id='dateToday'></span>
+</head>
+    <body onload="generateData()">
+        <div class="container-fluid">
+            <h1>Scrum template</h1>
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <table id=tableMonth>
+                        </table>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <table id=tableDays>
+                        </table>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <table id=tableDaysOfWeek>
+                        </table>
+                    </div>
+                </div>
+            <div id='dateToday' style="padding: 5px 0px"></div>
+            <div style="margin-top: 5px; font-size: 50px">
+                <span>Kyou wa</span>
+                <span id='month' style="background-color: yellow"></span>
+                <span id='date' style="background-color: #34ebc3"></span>
+                <span id='year'></span>
+                <span id='day'style="background-color: #34bdeb"></span>
             </div>
-          <div style="margin-top: 5px; font-size: 20px">
-            <span>Kyou wa</span>
-            <span id='month'></span>
-            <span id='date'></span>
-            <span id='year'></span>
-            <span id='day'></span>
-          </div>
-      </div>
-      <div class="footer">
-        <p><strong>(c) nub</strong></p>
-      </div>
-    </div>
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://chancejs.com/chance.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-  </body>
+            </div>
+            <div class="footer">
+            <p><strong>(c) nub</strong></p>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://chancejs.com/chance.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
 </html>
