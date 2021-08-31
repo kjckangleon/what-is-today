@@ -174,6 +174,4 @@ function generateData () {
             );
     }
     tableDaysOfWeekElement.innerHTML = daysOfWeekArr.toLocaleString().replace(/,/g,"");
-    
-
   }
