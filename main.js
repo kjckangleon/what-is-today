@@ -84,7 +84,7 @@ function generateData () {
         'sanjuuichinichi'
     ];
 
-    var year = 'nisennijuichi';
+    var year = 'nisennijuni';
 
     var daysOfWeek = [
       {
